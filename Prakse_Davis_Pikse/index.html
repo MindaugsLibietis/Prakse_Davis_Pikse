@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <header>  
+    
     <div class="header">
         <h1>Header</h1>
         <nav class="scroll-sect">
@@ -24,10 +25,22 @@
     </div>
 
 <body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#sakums">Sakums</a>
+          <a href="#about">Par mums</a>
+          <a href="#galerija">Glaerija</a>
+          <a href="#kontakti">Kontakti</a>
+        </div>
+    </div>
+    
     <div class = "row-item" id="sakums"> 
-        <div class="spacer">
+        <div class="spacer" id="mobile-spaceris" >
             &nbsp;
         </div>
+        <span class="nav-hider" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    
         <h1>Sakums</h1>
         <a href="https://about.google/" target="_blank">Visit Google!</a>
         <a href="https://about.google/">Visit Google!</a>
